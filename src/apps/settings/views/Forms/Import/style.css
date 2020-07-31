@@ -28,8 +28,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 45%;
-    width: 55%;
+    height: 40%;
+    width: 50%;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     z-index: 101;
@@ -41,14 +41,12 @@
     margin-top: 25px;
 }
 .Buttons{
-    
-    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
     margin-bottom: 5px;
 }
-.closeButton{
-    margin-left: 509px;
 
-}
 .text{
     margin-top: -5px;
 }

@@ -8,11 +8,13 @@ const ImportPopUp =(props)=>{
 
     const fileSelectorHandler = (event) =>{
         setuploaded([...uploaded,{files:event.target.files[0]}])
-        
     }
-
     const fileupload = () =>{
         console.log(uploaded)
+        callBack()
+    }
+    const callBack = () => {
+        props.callbackFromParent(uploaded);
     }
 
     if (props.show){
@@ -25,7 +27,7 @@ const ImportPopUp =(props)=>{
                     <section className='input'> <input type='file' onChange={fileSelectorHandler}/></section>
                     <section className='Buttons'>
                     <TextButton  type='solid' onClick={fileupload} >upload</TextButton>
-                    <TextButton className='closeButton' type="solid" onClick={props.Hide} >close</TextButton>
+                    <TextButton  type="solid" onClick={props.Hide} >close</TextButton>
                     </section>
                 </div>
             </div>

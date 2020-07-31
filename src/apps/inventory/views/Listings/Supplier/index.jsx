@@ -139,7 +139,7 @@ export default function SupplierListing() {
             </StyledHeader>
             <br />
 
-            <div style={{ margin: '0 auto', width: '90%' }}>
+            <div style={{ margintop: '0 auto', width: '90%', }}>
                <ReactTabulator
                   ref={tableRef}
                   columns={columns}
