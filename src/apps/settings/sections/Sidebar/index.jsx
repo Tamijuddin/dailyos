@@ -25,9 +25,7 @@ const Sidebar = ({ visible, toggleSidebar }) => {
             <StyledListItem onClick={() => addTab('Users', '/settings/users')}>
                {t(address.concat('users'))}
             </StyledListItem>
-            <StyledListItem
-               onClick={() => addTab('Devices', '/settings/devices')}
-            >
+            <StyledListItem onClick={() => addTab('Devices', '/settings/devices')}>
                {t(address.concat('devices'))}
             </StyledListItem>
             <StyledListItem onClick={() => addTab('Roles', '/settings/roles')}>
@@ -36,10 +34,11 @@ const Sidebar = ({ visible, toggleSidebar }) => {
             <StyledListItem onClick={() => addTab('Apps', '/settings/apps')}>
                {t(address.concat('apps'))}
             </StyledListItem>
-            <StyledListItem
-               onClick={() => addTab('Stations', '/settings/stations')}
-            >
+            <StyledListItem onClick={() => addTab('Stations', '/settings/stations')}>
                {t(address.concat('station'))}
+            </StyledListItem>
+            <StyledListItem onClick={() =>  addTab('Bulk Import', '/settings/import')}>
+               {t('imports')}
             </StyledListItem>
          </StyledList>
       </StyledSidebar>

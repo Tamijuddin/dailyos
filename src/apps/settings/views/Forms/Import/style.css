@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.model-wrapper{
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.model-backdrop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.model-box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 45%;
+    width: 55%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    z-index: 101;
+    overflow-y: auto;
+    padding: 40px;
+    padding-bottom: 0%;
+}
+.input{
+    margin-top: 25px;
+}
+.Buttons{
+    
+    margin-top: 120px;
+    margin-bottom: 5px;
+}
+.closeButton{
+    margin-left: 509px;
+
+}
+.text{
+    margin-top: -5px;
+}
+
